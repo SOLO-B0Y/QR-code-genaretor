@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Generator - iOS Liquid Glass</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader-screen" id="loaderScreen">
+    <div class="loader-text">Bivash welcomes you in GALAXY Program</div>
+  </div>
+
+  <div class="bubble-layer" id="bubbleLayer"></div>
+
+  <div class="theme-switch" id="themeToggle"></div>
+
+  <div class="container">
+    <h1>Galaxy QR Generator</h1>
+    <div class="input-row">
+      <input id="qrInput" type="text" placeholder="Enter text or link" />
+      <button id="generateBtn">Generate</button>
+    </div>
+    
+    <div class="qr-box" id="qrBox" style="display:none;">
+      <h3>Your QR Code</h3>
+      <div class="qr-card">
+        <div id="qrCanvasWrap"></div>
+        <button id="downloadBtn" style="margin-top:18px; display:none;">Download Styled PNG</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
